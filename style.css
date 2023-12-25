@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Georgian:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --header-bg-color: #f6635c;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  padding: 1rem 15rem;
+  width: 100%;
+  height: auto;
+  background-color: var(--header-bg-color);
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+  font-family: "Noto Sans Georgian", sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+li img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: auto;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #fff78a, #ffa1f5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* .container_right img {
+  width: 100%;
+  height: auto;
+} */
+.container_right {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/pexels-robin-stickel-70497.jpg");
+  background-size: 100% 100%;
+}
+.container_left {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 6rem;
+}
+.container_left h1 {
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  font-family: "Noto Sans Georgian";
+  margin-bottom: 7rem;
+}
+.container_left p {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  letter-spacing: 0.1rem;
+}
+.container_left .btn {
+  width: 100%;
+}
+.container_left button {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 6rem;
+  background-color: var(--header-bg-color);
+  outline: 0;
+  border: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+.second-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fff78a, #ffa1f5);
+}
+.fooditem-left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 4rem 4rem -2rem;
+}
+.food-left img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  height: 20rem;
+  padding: 0.5rem;
+}
+.food-right img {
+  width: inherit;
+
+  width: 25rem;
+  height: 39rem;
+  padding-left: 2.4rem;
+}
+.fooditem-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10rem;
+}
+.food-text {
+  margin: 4rem 10rem 4rem 0;
+  width: 100%;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-bg-color);
+}
+h2 {
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  line-height: 0.5;
+}
+.food-text .lorem::before {
+  content: "LOREM IPSUM";
+  position: absolute;
+  left: 0rem;
+  top: -4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+}
+.food-text a {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: -4rem;
+  color: black;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.food-text img {
+  padding-left: 1rem;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 998px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  .food-text h2 {
+    font-size: 2.8rem;
+    letter-spacing: 0.8rem;
+  }
+}
+@media (max-width: 1250px) {
+  .food-text {
+    margin: 4rem 6rem 4rem 2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .food-text {
+    margin: 4rem 6rem 4rem 4.8rem;
+  }
+}
+@media (max-width: 938px) {
+  .food-text {
+    margin: 4rem 6rem 4rem 8rem;
+  }
+  .food-left img {
+    width: 20rem;
+    height: 18.8rem;
+    padding: 0.5rem;
+  }
+  .food-right img {
+    width: inherit;
+
+    width: 22.5rem;
+    height: 37rem;
+    padding-left: 2.4rem;
+  }
+}
+@media (max-width: 840px) {
+  html {
+    font-size: 54%;
+  }
+  .header {
+    padding: 1rem 5.5rem;
+  }
+  .second-page {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  /* html {
+    font-size: 54%;
+  } */
+  .header {
+    padding: 1rem 5.5rem;
+  }
+  .container {
+    flex-direction: column-reverse;
+    order: -1;
+  }
+  .container_left h1 {
+    padding-top: 4rem;
+    /* margin-bottom: 4rem; */
+  }
+  .container_left button {
+    margin-bottom: 8rem;
+  }
+}
+@media (max-width: 710px) {
+  html {
+    font-size: 52.5%;
+  }
+  .header {
+    padding: 1rem 5rem;
+  }
+  .header li {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 626px) {
+  .header {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+  }
+}
